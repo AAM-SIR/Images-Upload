@@ -13,7 +13,7 @@ const PORT = process.env.PORT;
 app.use(
   cors({
     origin: [
-      "https://images-upload-five.vercel.app",
+      "https://images-upload-sigma.vercel.app",
       "http://localhost:3000",
       "http://localhost:3001",
     ],
