@@ -1,18 +1,11 @@
 "use client";
 
 import { uploadImageApi } from "@/api/imageapi";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 export default function Home() {
   const [file, setFile] = useState(null);
-  const [msg, setMsg] = useState("");
-
-  useEffect(() => {
-    console.log(
-      "🚀 LIVE API URL =",
-      process.env.NEXT_PUBLIC_API_URL
-    );
-  }, []);
+  const [msg, setMsg] = useState("");  
 
   const handleUpload = async () => {
     if (!file) return alert("Please select image");
